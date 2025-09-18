@@ -31,7 +31,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://medical-agency-api.vercel.app/contact", formData)
+      .post("https://medical-viridis-api.vercel.app/contact", formData)
       .then((response) => {
         setError(false);
         setSuccess(response.data.message);
